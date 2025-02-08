@@ -3,4 +3,9 @@
 
 int main() {
     greet();
+
+    // Game setup
+    std::string codeword = "codecademy";
+    std::string answer = "__________";
+    int misses = 0;
 }
