@@ -11,6 +11,7 @@ int main() {
 
     // Game loop
     while (answer != codeword && misses < 7) {
+        display_misses(misses);
         misses++;
     }
 
