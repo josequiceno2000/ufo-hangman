@@ -21,6 +21,7 @@ int main() {
         std::cout << "Enter your letter guess: ";
         std::cin >> letter;
 
+        // Check for letter in codeword
         for (int i = 0; i < codeword.size(); i++) {
             if (letter == codeword[i]) {
                 answer[i] = letter;
@@ -28,7 +29,16 @@ int main() {
             }
         }
 
-        misses++;
+        // Output result
+        if (guess = true) {
+            std::cout << "Correct!\n";
+        }
+        else {
+            std::cout << "Incorrect. The beam keeps pulling the human in.\n";
+            incorrect.push_back(letter);
+            misses++;
+        }
+   
     }
 
     // Endgame call
