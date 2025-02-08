@@ -14,10 +14,19 @@ int main() {
     // Game loop
     while (answer != codeword && misses < 7) {
         display_misses(misses);
-        std::cout << "Incorrect Guesses: ";
+
+        // Display incorrect guesses
+        std::cout << "\nIncorrect Guesses: ";
 
         for (int i = 0; i < incorrect.size(); i++) {
             std::cout << incorrect[i] << " ";
+        }
+
+        // Display codeword
+        std::cout << "\n\nCodeword: ";
+
+        for (int j = 0; j < answer.size(); j++) {
+            std::cout << answer[j] << " ";
         }
 
         misses++;
