@@ -1,8 +1,15 @@
 #include <iostream>
 #include <vector>
 
-// Define functions
-
+// FIXME: Define functions
+void greet() {
+    std::cout 
+        << "==================\n"
+        << "UFO: Guess to Save\n"
+        << "==================\n\n"
+        << "HOW TO PLAY:\n"
+        << "Save your fellow human from alien abduction by guessing the letters of the codeword!\n";
+}
 
 
 
