@@ -20,7 +20,25 @@ void end_game(std::string answer, std::string codeword) {
         std::cout << "FAILURE: The human will be experimented on. And it's your fault.\n\n";
     }
     std::cout << "=================================================================\n";
-} 
+}
+
+void display_status(std::vector<char> incorrect, std::string answer) {
+    // Display incorrect guesses
+    std::cout << "\n\nIncorrect Guesses: ";
+
+    for (int i = 0; i < incorrect.size(); i++) {
+        std::cout << incorrect[i] << " ";
+    }
+
+    // Display codeword
+    std::cout << "\n\nCodeword: ";
+
+    for (int j = 0; j < answer.size(); j++) {
+        std::cout << answer[j] << " ";
+    }
+    
+    std::cout << "\n\n";
+}
 
 
 
