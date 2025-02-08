@@ -14,11 +14,7 @@ int main() {
         misses++;
     }
 
-    // Win and Lose conditions
-    if (answer == codeword) {
-        std::cout << "SUCCESS: Human has been saved and you earn a medal of honor!\n";
-    }
-    else {
-        std::cout << "FAILURE: The human will be experimented on. And it's your fault.\n";
-    }
+    // Endgame call
+    end_game(answer, codeword);
+    
 }

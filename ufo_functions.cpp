@@ -11,6 +11,17 @@ void greet() {
         << "Save your fellow human from alien abduction by guessing the letters of the codeword!\n";
 }
 
+void end_game(std::string answer, std::string codeword) {
+    std::cout << "\n============================ ENDGAME ============================\n\n";
+    if (answer == codeword) {
+        std::cout << "SUCCESS: Human has been saved and you earn a medal of honor!\n\n";
+    }
+    else {
+        std::cout << "FAILURE: The human will be experimented on. And it's your fault.\n\n";
+    }
+    std::cout << "=================================================================\n";
+} 
+
 
 
 void display_misses(int misses) {
