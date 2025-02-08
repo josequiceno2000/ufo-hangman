@@ -29,15 +29,18 @@ int main() {
             }
         }
 
+
         // Output result
-        if (guess = true) {
+        if (guess == true) {
             std::cout << "Correct!\n";
         }
-        else {
+        else if (guess == false) {
             std::cout << "Incorrect. The beam keeps pulling the human in.\n";
             incorrect.push_back(letter);
             misses++;
         }
+
+        guess = false;
    
     }
 
